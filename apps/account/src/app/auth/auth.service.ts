@@ -1,9 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { UserRepository } from '../user/repositories/user.repository';
-import { UserEntity } from '../user/entity/user.entity';
+import { UserEntity } from '../user/entities/user.entity';
 import { UserRole } from '@micro/interfaces';
 import { JwtService } from '@nestjs/jwt';
 import { AccountRegister } from '@micro/contracts';
+
 @Injectable()
 export class AuthService {
   constructor(

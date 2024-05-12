@@ -2,7 +2,7 @@ import { AccountUserCourses, AccountUserInfo } from '@micro/contracts';
 import { Body, Controller } from '@nestjs/common';
 import { RMQRoute, RMQValidate } from 'nestjs-rmq';
 import { UserRepository } from './repositories/user.repository';
-import { UserEntity } from './entity/user.entity';
+import { UserEntity } from './entities/user.entity';
 
 @Controller()
 export class UserQueries {
